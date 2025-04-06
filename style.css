@@ -29,6 +29,7 @@ body{
     background-color: #81b2e4;
     border-radius: 50%;
     padding: 10px;
+    filter: drop-shadow(2px 4px 14px purple);
 }
 
 .info{
