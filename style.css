@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 body{
     text-align: center;
     background-color: #e1f7ff;
@@ -51,6 +53,9 @@ h2{
     font-size: 60px;
     margin: 0px;
     padding: 0px;
+    color:transparent;
+    background: linear-gradient(136deg,rgba(134, 42, 155, 1) 0%, rgba(197, 87, 199, 1) 50%, rgba(237, 83, 119, 1) 100%);
+    background-clip:text;
 }
 
 h4{
@@ -81,4 +86,18 @@ p{
     width: 30px;
 }
 
+.mypic {
+    animation: breathe 5s infinite;
+    animation-direction: alternate;
+}
 
+@keyframes breathe {
+    from {
+        transform: translate(0);
+        filter: sepia(0) hue-rotate(0deg) saturate(1) drop-shadow(0 0 10px blue);
+    }
+    to {
+        transform: translate(0, -100px);
+        filter: sepia(0.9) hue-rotate(180deg) saturate(4) drop-shadow(0 0 100px blue);
+    }
+}
